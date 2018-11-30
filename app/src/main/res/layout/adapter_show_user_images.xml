@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="155dp"
+    android:layout_height="155dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="2dp"
+    android:background="@color/white"
+    android:layout_marginTop="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/addpoto_img_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/demotwo"/>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+       <!--
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center">
+
+            <com.theophrast.ui.widget.SquareImageView
+                android:id="@+id/square"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/demotwo"
+                card_view:hwRatio="1"
+                android:scaleType="centerInside"
+                />
+
+
+        </android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/menu_icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dialog_cross"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+</RelativeLayout>

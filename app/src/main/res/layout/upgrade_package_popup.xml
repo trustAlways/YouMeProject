@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="480dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_border_two">
+
+    <!--<ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="@drawable/upgrade_popup"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_cut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                ></View>
+
+
+            <ImageView
+                android:id="@+id/hide_upgradeeDialog"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight=".1"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="right"
+                android:src="@drawable/dialog_cross" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight=".7"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+               
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/image_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center|top"
+                android:orientation="horizontal"
+                android:layout_marginTop="170dp">
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:ci_drawable="@drawable/pink_radius"
+                    app:ci_height="7dp"
+                    app:ci_width="6dp"
+                    app:ci_drawable_unselected="@drawable/blue_radius"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_combo_package"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".28"
+                android:padding="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:background="@drawable/upgrade_dialog_et">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="0dp"
+                   android:layout_weight=".55"
+                   android:textSize="20dp"
+                   android:paddingLeft="20dp"
+                   android:layout_marginTop="2dp"
+                   android:textColor="@color/white"
+                   android:text="Combo Packages"/>
+
+                <TextView
+                    android:id="@+id/combo_package_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:textSize="13dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/Rs"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_crushes_package"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".28"
+                android:padding="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/upgrade_dialog_et">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".55"
+                    android:textSize="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/white"
+                    android:text="Crushes Packages"/>
+
+                <TextView
+                    android:id="@+id/crush_package_min"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:textSize="13dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/Rs"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_dating_packages"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".28"
+                android:padding="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/upgrade_dialog_et">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".55"
+                    android:textSize="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/white"
+                    android:text="Dating Packages"/>
+
+                <TextView
+                    android:id="@+id/date_package_min"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:textSize="13dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/Rs"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+    <!--
+            //</ScrollView>
+    -->
+</LinearLayout>

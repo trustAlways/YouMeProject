@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle_drawle">-->
+
+    <!--<ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">-->
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="320dp"
+        android:layout_height="370dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+       >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="@dimen/mrg1"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_cut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:background="@color/focus_light">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/youmelogo"
+                android:layout_margin="@dimen/mrg2"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:orientation="vertical"
+            android:background="#f9f0f0"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tag_line_send_crush"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/black"
+                    android:text="Combo Packages"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="@color/grey_light"
+                    android:text="God Bless You."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/mrg1"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/send_crush_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_dialog_rectangle"
+                    android:textColor="@color/white"
+                    android:text="Yes"/>
+
+                <Button
+                    android:id="@+id/send_crush_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/mrg2"
+                    android:layout_marginRight="@dimen/mrg2"
+                    android:layout_marginBottom="@dimen/mrg1"
+                    android:background="@drawable/btn_dialog_rectangle"
+                    android:textColor="@color/white"
+                    android:text="No"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <!--
+            //</ScrollView>
+    -->
+    </android.support.v7.widget.CardView>

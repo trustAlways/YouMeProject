@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_signup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.activity.SignUp">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/app_background"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="15dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="125dp"
+        />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_below="@id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ff2aad"
+        android:text="Get ready to become WE"/>
+
+
+    <TextView
+        android:id="@+id/message_view"
+        android:layout_below="@id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_margin="@dimen/mrg2"
+
+        android:text="Opps!!
+Internet Connection Not Available."/>
+
+    <TextView
+        android:id="@+id/btn_retry"
+        android:layout_below="@id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_dialog_rectangle"
+        android:textColor="@color/white"
+        android:text="Retry"/>
+
+    <ImageView
+        android:id="@+id/no_data_image"
+        android:layout_below="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/no_data_available"/>
+
+    <LinearLayout
+        android:id="@+id/layout_view"
+        android:layout_below="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:visibility="visible"
+        android:layout_weight=".7"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_bordertwo"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <EditText
+                android:id="@+id/signup_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/x_et_reg_log_bg"
+                android:hint="Mobile Number"
+                android:maxLength="10"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/signup_mobile_no_err"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="mobile no is wrong"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/linear_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_bordertwo"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/sign_up_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/x_et_reg_log_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/sign_up_password_err"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:hint="Enter the Password"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+             android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/age_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:buttonTint="@color/blue"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/border_color"
+                android:text="Yes ,I am 16+"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/bt_sign_up"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_button"
+            android:text="Sign up"
+            android:visibility="visible"
+            android:layout_gravity="left"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+             />
+
+        <Button
+            android:id="@+id/bt_sign_in"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_button"
+            android:text="Sign in"
+            android:visibility="visible"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/agreement_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="7dp"
+            android:text="@string/signup_agreement"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/border_color"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

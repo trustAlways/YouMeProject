@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.activity.edit_profile_activities.Edit_User_Lifestyle">
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        card_view:cardCornerRadius="4dp">
+
+
+           <LinearLayout
+               android:id="@+id/ll_lifestyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".95"
+                    android:id="@+id/lifestyle"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:text="Smoking"/>
+
+                <CheckBox
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb"
+                    android:layout_gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    />
+
+               <ImageView
+                   android:id="@+id/check_image"
+                   android:layout_width="wrap_content"
+                   android:layout_height="25dp"
+                   android:src="@drawable/unchecked"
+                   android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_Linear_cart_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.96">
+
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layout_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/blue"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/gallery_back"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left"
+                    android:layout_marginLeft="20dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/activity_named"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Gallery"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recycler_view"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    </LinearLayout>

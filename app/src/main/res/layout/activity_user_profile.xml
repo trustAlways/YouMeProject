@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_user_profile2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.activity.UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:background="#5fcbf9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:weightSum="1"
+                android:elevation="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".8"
+                   android:paddingRight="60dp"
+                   android:paddingTop="7dp"
+                   android:paddingBottom="7dp"
+                   android:src="@drawable/app_logo"
+                    />
+
+                <ImageView
+                    android:id="@+id/upload_images"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:padding="10dp"
+                    android:src="@drawable/male_blue"
+                    />
+
+            </LinearLayout>
+
+
+    <RelativeLayout
+         android:id="@+id/relative_profile"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginRight="20dp">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/user_profile_image"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:src="@drawable/male_blue"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="6dp"
+             android:layout_alignParentLeft="true"/>
+
+
+         <TextView
+             android:id="@+id/userpseudonym"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Vishwas Shrivastava"
+              android:layout_marginLeft="20dp"
+              android:textSize="20sp"
+             android:layout_marginTop="20dp"
+             android:gravity="center"
+             android:fontFamily="sans-serif"
+             android:layout_toRightOf="@id/user_profile_image"
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="I Am looking for friendship"
+             android:layout_marginLeft="20dp"
+             android:textSize="20sp"
+             android:fontFamily="sans-serif-light"
+             android:layout_below="@id/userpseudonym"
+             android:layout_toRightOf="@id/user_profile_image"
+
+             />
+
+       </RelativeLayout>
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".34"
+                android:weightSum="1"
+                android:background="@drawable/corner_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="Posts"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="105"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:fontFamily="sans-serif"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:weightSum="1"
+                android:background="@drawable/corner_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="Likes"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="105"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:fontFamily="sans-serif"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:weightSum="1"
+                android:background="@drawable/corner_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="Dates"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="105"
+                    android:textSize="20sp"
+                    android:gravity="top|center"
+                    android:fontFamily="sans-serif"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/user_profile_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="470dp"
+                android:background="#fff"
+                android:gravity="left"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:listSelector="@android:color/transparent"
+                android:nestedScrollingEnabled="false"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="3dp"></GridView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                style="@style/Album.WrapContent.WidthMatchParent"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

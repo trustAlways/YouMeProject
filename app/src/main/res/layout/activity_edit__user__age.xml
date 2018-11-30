@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:background="@color/ll_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/edt_age_arrow"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:src="@drawable/left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Age"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <SeekBar
+                android:id="@+id/edt_age_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="50"
+                android:progress="5"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:progressDrawable="@drawable/kms_seekbar_drawable_progress"
+                android:thumb="@drawable/kms_seekbar_drawable_thumb"
+                />
+
+            <TextView
+                android:id="@+id/user_gender_age"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/grey_light"
+                android:text="Not Provided"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

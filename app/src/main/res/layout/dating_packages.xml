@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/blue"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/datingpackage_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left"
+                    android:layout_marginLeft="20dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Dating Packages"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".46"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight=".7"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <Gallery
+                            android:id="@+id/gallery"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/image_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center|top"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="130dp">
+
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_margin="20dp">
+
+
+                  <android.support.v7.widget.RecyclerView
+                      android:id="@+id/dating_recycleview"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                  </android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#e6fafd"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="What's so good about Reliable?"
+                android:textColor="#6a6a6a" />
+
+            <LinearLayout
+                android:id="@+id/dating_real_identity"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/explore_identity_wthout_txt"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Explore Real identity"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_light"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cacaca"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dating_search_globe_across"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/search_globe_wthout_txt"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Search across the Globe"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_light"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cacaca"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dating_browse_ads_free"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ads_free_wthout_txt"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Browse Ads. free"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_light"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cacaca"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dating_caht_unlimited"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/unlimited_chat_wthout_txt"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Chat unlimited with your Date"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_light"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cacaca"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dating_bookmark_unlimited"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/unlimited_favourites_wthout_txt"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Unlimited Bookmarks/Favorites"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_light"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cacaca"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dating_gobacks_unlimited"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/go_back_wthout_txt"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Unlimited Go Backs"
+                        android:textColor="@color/blue"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5"
+                        android:paddingLeft="10dp"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_light"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:visibility="visible" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

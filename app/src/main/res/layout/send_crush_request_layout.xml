@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:elevation="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight=".3">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/send_crush_image_icon"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/male_blue"
+                   android:padding="5dp"/>
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".48"
+                android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_crush_user_nm"
+                android:text="Harry poter"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rsend_crush_compeatable"
+                android:text="0% Compatible"
+                android:textSize="16dp"
+                android:paddingLeft="5dp"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_crush_date"
+                android:text="13/07/18"
+                android:textSize="16dp"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".22"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/send_crush_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pending"
+                android:gravity="center"
+                android:textSize="16dp"
+                />
+
+            <Button
+                android:id="@+id/send_date_request"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Date"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/mrg1"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_dialog_rectangle"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+

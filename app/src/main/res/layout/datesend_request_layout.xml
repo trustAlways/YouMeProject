@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="3dp"
+        android:background="@color/white"
+        android:elevation="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="1">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight=".3">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/send_date_image_icon"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/male_blue"
+                   android:padding="5dp"/>
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_date_user_nm"
+                android:hint="Harry poter"
+                android:textSize="18dp"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_date_compitable"
+                android:text="0% Compatible"
+                android:textSize="16dp"
+                android:paddingLeft="5dp"
+               />
+
+            <TextView
+                android:id="@+id/send_date_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="13/07/18"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/date_send_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pending"
+                android:textSize="16dp"
+               />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+

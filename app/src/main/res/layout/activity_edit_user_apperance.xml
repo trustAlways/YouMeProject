@@ -1,0 +1,120 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/apperance_linear_lay"
+    android:orientation="vertical"
+    android:background="@color/ll_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/blue"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/appearance_arrow"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/left"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="My Appearance"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:text="Weight(Kg)"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="@color/grey_light"
+                    />
+
+                <EditText
+                    android:id="@+id/user_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_border"
+                    android:layout_weight=".6"
+                    android:hint="Kgs"
+                    android:inputType="numberDecimal|textNoSuggestions"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:text="Height''"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="@color/grey_light"/>
+
+                <EditText
+                    android:id="@+id/user_height"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_border"
+                    android:layout_weight=".6"
+                    android:inputType="numberDecimal|textNoSuggestions"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

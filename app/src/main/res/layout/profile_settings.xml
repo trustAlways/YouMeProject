@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/blue"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/setting_arrow"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/left" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:text="Settings"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/setting_upgrade_package"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/ll_background"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/upgrade" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/ll_background"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Control Your Profile"
+                        android:textColor="#6a6a6a"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Hide My Age"
+                            android:textColor="#6a6a6a"
+                            android:textSize="18dp" />
+
+                        <Switch
+                            android:id="@+id/hide_age_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".7"
+                            android:paddingLeft="10dp"
+                            android:text="Don’t Show My Distance"
+                            android:textColor="#6a6a6a"
+                            android:textSize="18dp" />
+
+                        <Switch
+                            android:id="@+id/hide_distance_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".3"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Show me"
+                                android:textColor="@color/grey_light"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/show_me"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/grey_light"
+                                android:textSize="18dp"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight=".3"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".7"
+                                android:paddingLeft="10dp"
+                                android:text="Men"
+                                android:textColor="#9b9a9a"
+                                android:textSize="18dp" />
+
+                            <Switch
+                                android:id="@+id/men_switch"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight=".3"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textOn="on" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight=".3"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".7"
+                                android:paddingLeft="10dp"
+                                android:text="Women"
+                                android:textColor="#9b9a9a"
+                                android:textSize="18dp" />
+
+                            <Switch
+                                android:id="@+id/female_switch"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight=".3"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textOn="on" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Search profile within"
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/selected_distance"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:gravity="left"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="10dp"
+                                android:text="0 Kms range."
+                                android:textColor="@color/grey_light"
+                                android:textSize="18dp"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight=".5"
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                                android:id="@+id/distance_rangeSeekbar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                app:corner_radius="0"
+                                app:min_value="45"
+                                app:max_value="50"
+                                app:bar_color="#b6b6b6"
+                                app:bar_highlight_color="@color/pink"
+                                app:left_thumb_color="@color/blue"
+                                app:left_thumb_color_pressed="@color/blue"
+                                app:data_type="_integer"
+                                android:visibility="gone"/>
+
+                            <SeekBar
+                                android:id="@+id/kms_seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:min="0"
+                                android:max="200"
+                                android:layout_gravity="center"
+                                android:progress="50"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/kms_seekbar_drawable_progress"
+                                android:thumb="@drawable/kms_seekbar_drawable_thumb"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".55"
+                                android:paddingLeft="10dp"
+                                android:text="Search between age of "
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/search_age_btw"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".35"
+                                android:gravity="left"
+                                android:paddingLeft="3dp"
+                                android:hint="16-26 Years "
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight=".5"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                                android:id="@+id/age_rangeSeekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                app:corner_radius="10"
+                                app:min_value="16"
+                                app:max_value="100"
+                                app:gap="10"
+                                app:bar_color="#b6b6b6"
+                                app:bar_highlight_color="@color/pink"
+                                app:left_thumb_color="@color/blue"
+                                app:right_thumb_color="@color/blue"
+                                app:left_thumb_color_pressed="@color/blue"
+                                app:right_thumb_color_pressed="@color/blue"
+                                app:data_type="_integer"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/ll_background"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="My Account"
+                        android:textColor="#6a6a6a"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Mobile Verified"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/mobile_user"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:text="1234567890"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/ll_zodiac"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:text="Email"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+
+                        <ImageView
+                            android:layout_toRightOf="@+id/email"
+                            android:id="@+id/sucess_img"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:src="@drawable/right_tick"/>
+
+
+                        <ImageView
+                            android:layout_toRightOf="@+id/email"
+                            android:id="@+id/error_img"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".1"
+                            android:padding="5dp"
+                            android:visibility="visible"
+                            android:src="@drawable/error_tick"/>
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/Add_email_popup"
+                            android:layout_width="110dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/btn_dialog_rectangle"
+                            android:gravity="center"
+                            android:text="Add Email"
+                            android:visibility="visible"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+
+                            />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/Added_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:visibility="gone"
+                            android:layout_toRightOf="@+id/sucess_img"
+                            android:gravity="right"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/mrg2"
+                            android:text="vishuu6456@gmail.com"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_changepassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:background="@drawable/ripple_accent"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Change Password"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/user_status_relationship"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingRight="10dp"
+                            android:gravity="right"
+                            android:inputType="textPassword"
+                            android:text="1234567890"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/ll_background"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="Push Notification"
+                        android:textColor="#6a6a6a"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                   <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                       <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Visitor"
+                            android:textColor="#6a6a6a"
+                            android:textSize="18dp" />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="0dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_weight=".5"
+                           android:paddingLeft="10dp"
+                           android:text="Push Notification"
+                           android:textColor="#9b9b9b"
+                           android:textSize="14dp" />
+
+
+                   </LinearLayout>
+
+
+                        <Switch
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:padding="5dp"
+
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="New Crush"
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Push Notification"
+                                android:textColor="#9b9b9b"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+
+                        <Switch
+                            android:id="@+id/new_crush_notification_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:padding="5dp"
+
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Date Invitation"
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Push Notification"
+                                android:textColor="#9b9b9b"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+
+                        <Switch
+                            android:id="@+id/date_invitation_notification_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:padding="5dp"
+
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Message"
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Push Notification"
+                                android:textColor="#9b9b9b"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+
+                        <Switch
+                            android:id="@+id/message_notification_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="true"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:padding="5dp"
+
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Daily Packs"
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Push Notification"
+                                android:textColor="#9b9b9b"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+
+                        <Switch
+                            android:id="@+id/daily_packs_notification_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="true"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Other Notification"
+                                android:textColor="#6a6a6a"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight=".5"
+                                android:paddingLeft="10dp"
+                                android:text="Push Notification"
+                                android:textColor="#9b9b9b"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+
+                        <Switch
+                            android:id="@+id/other_notification_switch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="true"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="invisible" />
+
+                   <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/ll_background"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Show Distance in"
+                        android:textColor="#6a6a6a"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Kms"
+                            android:textColor="#6a6a6a"
+                            android:textSize="18dp" />
+
+                        <Switch
+                            android:id="@+id/distance_shoe_in_kms"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Miles"
+                            android:textColor="#6a6a6a"
+                            android:textSize="18dp" />
+
+                        <Switch
+                            android:id="@+id/distance_shoe_in_miles"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:checked="false"
+                            android:fontFamily="sans-serif-condensed"
+                            android:switchMinWidth="@dimen/album_dp_20"
+                            android:textOn="on" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="invisible" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/ll_background"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Legal"
+                        android:textColor="#6a6a6a"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_looking_for"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:background="@drawable/ripple_accent"
+
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Licenses"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/user_lookingfor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="Friendship"
+                            android:visibility="gone"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_ethenicity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:background="@drawable/ripple_accent"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:paddingLeft="10dp"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/ethenicity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="English"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+                            android:visibility="gone"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:background="@drawable/ripple_accent"
+
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".8"
+                            android:paddingLeft="10dp"
+                            android:text="Terms and Conditions"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/user_education"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="Masters"
+                            android:visibility="gone"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_artofcredit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:background="@drawable/ripple_accent"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".8"
+                            android:paddingLeft="10dp"
+                            android:text="Art work credits"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="Masters"
+                            android:visibility="gone"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_contactus"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:background="@drawable/ripple_accent"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".8"
+                            android:paddingLeft="10dp"
+                            android:text="Contact Us"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="Masters"
+                            android:visibility="gone"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cacaca"
+                        android:visibility="visible" />
+
+
+                  <Button
+                      android:id="@+id/btn_logout"
+                      android:layout_width="match_parent"
+                      android:layout_height="60dp"
+                      android:text="Logout"
+                      android:gravity="center"
+                      android:textColor="@color/white"
+                      android:layout_margin="10dp"
+                      android:background="@drawable/btn_dialog_rectangle"
+                      android:textSize="18dp"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+

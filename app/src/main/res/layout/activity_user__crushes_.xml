@@ -1,0 +1,142 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.activity.edit_profile_activities.Edit_User_Hobbies">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/blue"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/crushes_backarrow"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/left"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Crushes"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/ll_background"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_sent_crushes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                android:background="@color/ll_background"
+                android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/sentcrushes_activated"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".97"
+                android:src="@drawable/send"
+                android:visibility="visible"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:id="@+id/sentcrushes_deactivated"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".97"
+                android:src="@drawable/send_grey"
+                android:visibility="gone"
+                android:padding="20dp"/>
+
+                <View
+                    android:id="@+id/sentcrushes_activatedview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".03"
+                    android:background="@color/pink"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_light"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_received_crushes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                android:background="@color/ll_background"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/receivedcrushes_activated"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".97"
+                    android:visibility="gone"
+                    android:src="@drawable/received"
+                    android:padding="20dp"/>
+
+
+                <ImageView
+                    android:id="@+id/receivedcrushes_deactivated"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".97"
+                    android:visibility="visible"
+                    android:src="@drawable/received_grey"
+                    android:padding="20dp"/>
+
+                <View
+                    android:id="@+id/receivedcrushes_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".03"
+                    android:background="@color/pink"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/crush_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            ></FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

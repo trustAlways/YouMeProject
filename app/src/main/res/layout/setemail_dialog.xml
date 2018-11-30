@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/email_bg">
+
+    <!--<ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_cut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".91"
+                ></View>
+
+
+            <ImageView
+                android:id="@+id/hideDialog"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight=".09"
+                android:layout_margin="5dp"
+                android:layout_gravity="top|right"
+                android:src="@drawable/dialog_cross" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".18"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dialog_border"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/enter_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:background="@drawable/x_et_bg"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:hint="Enter your email id"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textSize="16dp"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/addemail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:padding="10dp"
+                android:src="@drawable/dialog_send"
+                android:background="@drawable/dialog_send_border"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once verified you will not able to change the"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email id again"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/grey"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+            //</ScrollView>
+    -->
+</LinearLayout>

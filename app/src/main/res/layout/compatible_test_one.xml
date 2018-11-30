@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/compatibility_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/no_data_available"/>
+
+   <RelativeLayout
+       android:id="@+id/frst_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="15dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <TextView
+        android:layout_below="@id/app_logo"
+        android:id="@+id/txt_view1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Compatibility Test"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:background="@color/blue"/>
+
+    <TextView
+        android:layout_below="@id/txt_view1"
+        android:id="@+id/txt_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1 Of 20"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:layout_below="@id/txt_view2"
+        android:id="@+id/c_txt_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="false"
+        android:text="1. Are you?"
+        android:textSize="25dp"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_below="@id/c_txt_view3"
+        android:id="@+id/ll_lineartestone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/c_one_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:layout_marginLeft="40dp"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Introvert"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_lineartestone"
+        android:id="@+id/ll_lineartesttwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/c_one_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:buttonTint="@color/blue"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Extrovert"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_above="@id/ctestone_previous_step"
+           android:text="1 Of 20"
+           android:textSize="18dp"
+           android:layout_marginBottom="@dimen/mrg2"
+           android:gravity="center"
+           android:fontFamily="sans-serif-light"
+           android:textColor="@color/grey"/>
+
+
+      <ImageView
+        android:layout_below="@+id/linear_ll"
+        android:id="@+id/ctestone_previous_step"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/previous_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+       <TextView
+           android:layout_below="@+id/linear_ll"
+           android:id="@+id/reset_btn"
+           android:layout_width="100dp"
+           android:layout_height="60dp"
+           android:text="Quit"
+           android:textColor="@color/white"
+           android:gravity="center"
+           android:textSize="18dp"
+           android:background="@drawable/signup_button"
+           android:layout_alignParentBottom="true"
+           android:layout_centerInParent="true"
+           android:layout_marginBottom="20dp"
+           />
+
+
+    <ImageView
+        android:layout_below="@+id/linear_ll"
+        android:id="@+id/ctestone_next_step"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/next_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        />
+   </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/second_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/apps_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:src="@drawable/app_logo" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/apps_logo"
+                    android:background="@color/blue"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Compatibility Test "
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="1. Are you?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_frst_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--#cae8f2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="2. Can you introduce yourself frankly?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_scnd_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="3. Can you stay relaxed under pressure?"
+                        android:textColor="@color/grey_light"
+
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_thrd_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="4. Mostly you initiate the conversation first?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_frth_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="5. Are you?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_five_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="6. Are you attention seeker?"
+                        android:textColor="@color/grey_light"
+
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_six_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="7. Are you? "
+                        android:textColor="@color/grey_light"
+
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_seven_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="8. What you like?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_eight_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+
+                        android:text="9. Can you call yourself dreamer?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_nine_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="10. You like spending time with?"
+                        android:textColor="@color/grey_light"
+
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_ten_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+
+                        android:text="11. Have you ever been into relationship?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_eleven_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="12. Have you ever cheated in relationship?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_twelve_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="13. Where do you follow your crush?"
+                        android:textColor="@color/grey_light"
+
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_thrteen_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="14. You are already in relationship, so you still want to crush?"
+                        android:textColor="@color/grey_light"
+
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_frteen_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="15. Do you believe in more than one crush at a time?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_ffteen_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="16. Would you allow your partner to have crush on others?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_sixteen_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="17. Does relationship gets stronger by confession?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_seventeen_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="18. Hiding the past relationship and secrets is good for relationship?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_eighty_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/ll_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="19. For successful relationship what matters for you?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_ninty_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="30dp"
+                        android:text="20. Is religion a barrier for you in relationship?"
+                        android:textColor="@color/grey_light"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/ctest_twenty_ans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight=".9"
+                            android:text="Yes"
+                            android:textColor="@color/grey_light"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!---->
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. http://hiteshsahu.com- All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ If you use or distribute this project then you MUST ADD A COPY OF LICENCE
+  ~ along with the project.
+  ~  Written by Hitesh Sahu <hiteshkrsahu@Gmail.com>, 2017.
+  -->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#cfe7f4"
+    tools:ignore="NewApi">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#cfe7f4"></solid>
+        </shape>
+    </item>
+</ripple>

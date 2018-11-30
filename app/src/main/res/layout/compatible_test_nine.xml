@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="15dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_below="@id/app_logo"
+        android:id="@+id/txt_view1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Compatibility Test"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:background="@color/blue"/>
+
+    <TextView
+        android:layout_below="@id/txt_view1"
+        android:id="@+id/c_txt_view9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="9. Can you call yourself dreamer?"
+        android:textSize="25dp"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_below="@id/c_txt_view9"
+        android:id="@+id/ll_linearone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/c_nine_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue"
+            android:layout_marginLeft="40dp"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Yes"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_linearone"
+        android:id="@+id/ll_lineartwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/c_nine_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:buttonTint="@color/blue"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="No"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_above="@id/ctestnine_previous_step"
+        android:id="@+id/txt_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="9 Of 20"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/mrg2"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/grey"/>
+
+
+    <ImageView
+        android:layout_below="@+id/linear_ll"
+        android:id="@+id/ctestnine_previous_step"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/previous_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_below="@+id/linear_ll"
+        android:id="@+id/reset_btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Quit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@drawable/signup_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ImageView
+        android:layout_below="@+id/linear_ll"
+        android:id="@+id/ctestnine_next_step"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/next_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

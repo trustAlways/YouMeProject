@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/relative_user_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1"
+    android:visibility="visible"
+    tools:context=".Activity.activity.UserProfileActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".14"
+        android:orientation="vertical"
+        android:background="@drawable/userprofile">
+
+        <RelativeLayout
+            android:id="@+id/relative_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            tools:ignore="NotSibling">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_icon"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/deomone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_below="@+id/profile_image_icon"/>
+
+            <ImageView
+                android:id="@+id/chat_icon"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/messages"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/chat_icon"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".74"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <link.fls.swipestack.SwipeStack
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:stack_rotation="0"
+            android:visibility="visible"
+            app:disable_hw_acceleration="true"
+            app:allowed_swipe_directions="both" />
+
+       <!-- <ImageView
+            android:id="@+id/img_no_data_avel1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_profile"/>-->
+
+        <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            app:rb_color="#0099CC"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            app:rb_scale="6">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_no_data_avel"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:src="@drawable/userimage" />
+        </com.skyfishjy.library.RippleBackground>
+
+       </RelativeLayout>
+
+          <LinearLayout
+                android:layout_below="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".11"
+                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/reload_stack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/refresh"
+                    android:layout_weight=".25"
+                    android:padding="5dp"
+                    android:background="@drawable/ripple_effect"
+
+                    />
+
+                  <ImageView
+                      android:id="@+id/dislike"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".25"
+                      android:padding="5dp"
+                      android:visibility="gone"
+                      android:src="@drawable/dislike"
+                      android:background="@drawable/ripple_effect_dislike"
+
+                      />
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/like"
+                    android:layout_weight=".25"
+                    android:padding="5dp"
+                    android:background="@drawable/ripple_effect_like"
+
+                    />
+
+                  <ImageView
+                      android:id="@+id/send_crush_request"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/crush"
+                      android:layout_weight=".25"
+                      android:padding="5dp"
+                      android:background="@drawable/ripple_effect_crush"
+
+                      />
+
+                  <ImageView
+                      android:id="@+id/dating"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/datingg"
+                      android:layout_weight=".25"
+                      android:background="@drawable/ripple_effect"
+
+                      />
+
+            </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

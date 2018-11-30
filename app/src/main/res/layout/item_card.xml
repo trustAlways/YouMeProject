@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:background="@color/white"
+           >
+
+
+      <!-- <LinearLayout
+           android:layout_width="340dp"
+           android:layout_height="398dp"
+           android:layout_gravity="center"
+           android:orientation="vertical"
+           >-->
+
+           <android.support.v7.widget.CardView
+               xmlns:card_view="http://schemas.android.com/apk/res-auto"
+               android:layout_height="match_parent"
+               android:layout_width="match_parent"
+               card_view:cardCornerRadius="10dp"
+               android:background="@color/white"
+               card_view:cardElevation="10dp"
+               android:layout_marginTop="13dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginBottom="13dp"
+               android:layout_gravity="center">
+
+           <ImageView
+               android:id="@+id/user_image1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="center"
+               android:adjustViewBounds="true"
+               android:src="@drawable/app_logo"
+               />
+
+
+          <!-- <com.joooonho.SelectableRoundedImageView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/user_image1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/sanju"
+               app:sriv_left_top_corner_radius="1dp"
+               app:sriv_right_top_corner_radius="1dp"
+               app:sriv_left_bottom_corner_radius="1dp"
+               app:sriv_right_bottom_corner_radius="1dp"
+               app:sriv_border_width="1dip"
+               app:sriv_border_color="@color/white"
+               />-->
+
+<!--
+       </LinearLayout>
+-->
+
+           <ImageView
+            android:id="@+id/gallery_image"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gallery"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"/>
+
+           <ImageView
+               android:id="@+id/add_favorite"
+               android:layout_width="50dp"
+               android:layout_height="40dp"
+               android:src="@drawable/favourite"
+               android:layout_marginTop="70dp"
+               android:layout_marginLeft="15dp"/>
+
+           <ImageView
+               android:id="@+id/report_spam"
+               android:layout_width="50dp"
+               android:layout_height="40dp"
+               android:src="@drawable/report"
+               android:layout_marginTop="120dp"
+               android:layout_marginLeft="15dp"/>
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginBottom="50dp"
+               android:layout_gravity="bottom"
+               android:layout_marginLeft="25dp"
+
+               >
+
+
+               <TextView
+                   android:id="@+id/username_age"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif"
+                   android:text="Pseudonym, 20"
+                   android:textColor="@color/white"
+                   android:textSize="25dp"
+                   android:visibility="visible" />
+
+               <TextView
+                   android:id="@+id/away_from"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="3.0 Kms away"
+                   android:textColor="@color/white"
+                   android:fontFamily="sans-serif"
+                   android:textSize="18sp"
+                   />
+           </LinearLayout>
+
+
+           </android.support.v7.widget.CardView>
+       </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
