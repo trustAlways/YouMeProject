@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Dates"
+                android:text="Dating"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:paddingLeft="20dp"
@@ -51,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_weight=".5"
+                android:layout_weight=".33"
                 android:background="@color/ll_background"
                 android:weightSum="1">
 
@@ -94,7 +94,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_weight=".5"
+                android:layout_weight=".33"
                 android:background="@color/ll_background"
                 android:weightSum="1">
 
@@ -119,6 +119,51 @@
 
                 <View
                     android:id="@+id/receiveddate_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".03"
+                    android:background="@color/pink"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_light"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_accepted_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".33"
+                android:background="@color/ll_background"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/accepteddate_activated"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".97"
+                    android:visibility="gone"
+                    android:src="@drawable/dated"
+                    android:padding="20dp"/>
+
+
+                <ImageView
+                    android:id="@+id/accepteddate_deactivated"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".97"
+                    android:visibility="visible"
+                    android:src="@drawable/without_color_dated"
+                    android:padding="20dp"/>
+
+                <View
+                    android:id="@+id/accepteddate_view"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".03"

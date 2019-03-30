@@ -7,7 +7,8 @@
     <string name="public_name">A public name that will be visible to other users of YouMe.</string>
     <string name="example">eg: Honey, Rocky.</string>
     <string name="Rs">Starting at \u20B9250.00</string>
-    <color name="instacropper_cropper_background">@android:color/white</color> <!-- Background color of InstaCropperView in the activity -->
+    <color name="instacropper_cropper_background">@android:color/white
+    </color> <!-- Background color of InstaCropperView in the activity -->
 
     <string name="pick_image_intent_chooser_title">Select source</string>
     <string name="result_image_desc">crop result</string>
@@ -19,6 +20,11 @@
     <string name="crop_image_menu_rotate_right">Rotate</string>
     <string name="crop_image_menu_crop">Crop</string>
 
+    <string name="dem">Hey psydonym
+           It will take just 2 minutes for you\n
+           to complete the Personality test\n
+           and show your personality to
+           everyone  you want date with.</string>
 
     <string-array name="shopping_item">
         <item>Married</item>
@@ -27,4 +33,47 @@
         <item>Seprate</item>
 
     </string-array>
+
+    <string name="license">
+        In a publishing context, what exactly is content licensing?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        Why  do we use it?
+        It i   as a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using "Content here,
+        content here', making it look like readable English.
+        Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+        default model text, and a search for "lorem ipsum"
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident,
+        sometimes on purpose (injected humour and the like).
+
+
+    </string>
+
+
+    <string name="client_id">your_client_id</string>
+    <string name="callback_url">https://instagram.com/</string>
+    <string name="base_url">https://api.instagram.com/</string>
+
+
+    <string name="date_question_one">1. Why do you want to date me?</string>
+    <string name="date_question_two">2. What do you like about me?</string>
+    <string name="date_question_three">3. How would you make the date memorable? </string>
+
+
+    <string name="reason">Why do you want to delete your account?</string>
+
+    <string name="reason_one">I found my dating partner.</string>
+    <string name="reason_two">I don\'t find any real dating partner.</string>
+    <string name="reason_three">Security Issue.</string>
+    <string name="reason_four">I don\'t like App.</string>
+    <string name="reason_five">It\'s temporary delete, I\'ll come back soon.</string>
+    <string name="reason_six">Other</string>
+    <string name="other_reason">Tell us, what is the reason?</string>
+
+
 </resources>

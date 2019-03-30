@@ -10,6 +10,7 @@
     <color name="accent_700">#C2185B</color>
     <color name="blue">#1DA1F3</color>
     <color name="switch_blue">#1DA1F3</color>
+    <color name="switch_bluet">#48d2fc</color>
     <color name="black">#000000</color>
     <color name="pink">#f545e1</color>
     <color name="switch_pink">#ff5ecc</color>
@@ -42,4 +43,5 @@
 
 
     <color name="not_selction">#b9b9b9</color>
+    <color name="orange">#ff9500</color>
 </resources>

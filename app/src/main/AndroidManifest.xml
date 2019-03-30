@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.youme.candid.youmeapp">
+    package="com.youme.dating.youmeapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <uses-feature
         android:name="android.hardware.Camera2"
@@ -45,6 +46,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Activity.activity.SignUp"
             android:configChanges="orientation|screenSize|keyboardHidden" />
@@ -66,18 +68,17 @@
 
         <activity
             android:name=".Activity.activity.Chat"
-            android:configChanges="orientation"
-            android:windowSoftInputMode="adjustResize"/>
+            android:configChanges="orientation|screenSize|keyboardHidden"
+           android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".Activity.Cropper.CropImageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Crop_Theam" />
-
-
         <activity
             android:name=".Activity.activity.LifeStyleActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <activity android:name=".Activity.activity.Test_activities.Test_one" />
         <activity android:name=".Activity.activity.Test_activities.Test_two" />
         <activity android:name=".Activity.activity.Test_activities.Test_three" />
@@ -108,20 +109,21 @@
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".Activity.activity.UserProfileActivity"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-
         <activity
             android:name=".Activity.activity.Upload2"
-            android:configChanges="orientation|screenSize|keyboardHidden" >
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="com.android.camera.action.CROP" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.youme.candid.youmeapp.fileprovider"
+            android:authorities="com.youme.dating.youmeapp.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -129,20 +131,37 @@
                 android:resource="@xml/filepaths" />
         </provider>
 
-        <!--<activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat"/>-->
+        <!--
+            <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        -->
+
+        <!--firebase notification services-->
+        <service android:name=".Activity.fcmServices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Activity.fcmServices.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
 
         <activity
             android:name=".Activity.activity.ZodiacActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".Activity.activity.UserPersonalInfo"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".Activity.activity.GalleryActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".Activity.activity.MyProfileActiivty"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".Activity.activity.Edit_UserProfile_Actiivty"
@@ -150,21 +169,46 @@
         <activity
             android:name=".Activity.activity.User_Dates_Activity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Lifestyle" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Hobbies" />
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Lifestyle"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Hobbies"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
         <activity
             android:name=".Activity.activity.edit_profile_activities.Edit_User_Apperance"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".Activity.activity.edit_profile_activities.Edit_User_Nature"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_RelationshipStatus" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_ZodiacSign" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Looking_For" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Ethenicity" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Education" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Profession" />
-        <activity android:name=".Activity.activity.edit_profile_activities.Edit_Add_Photo" />
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_RelationshipStatus"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_ZodiacSign"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Looking_For"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Ethenicity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Education"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_User_Profession"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.edit_profile_activities.Edit_Add_Photo"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <activity
             android:name=".Activity.activity.User_Crushes_Activity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
@@ -174,15 +218,49 @@
         <activity
             android:name=".Activity.activity.User_Favourite_Actiivty"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".Activity.activity.User_Profile_Setting" />
-        <activity android:name=".Activity.activity.Dating_Packages" />
-        <activity android:name=".Activity.activity.Crushes_Packages" />
-        <activity android:name=".Activity.activity.Combo_Packages" />
+
+        <activity android:name=".Activity.activity.User_Profile_Setting"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.Dating_Packages"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.Crushes_Packages"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.Combo_Packages"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <activity
             android:name=".Activity.activity.edit_profile_activities.Edit_User_Age"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".Activity.activity.Fullview_User_Profile" />
-        <activity android:name=".Activity.activity.ChatUserList"></activity>
-    </application>
+
+        <activity android:name=".Activity.activity.Fullview_User_Profile"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.ChatUserList"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.LicenseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.PrivacyPolicyActivtiy"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+
+        <activity android:name=".Activity.activity.HowToDeleteActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.TermAndConditionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".Activity.activity.WorkForCredit"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+            </application>
 
 </manifest>

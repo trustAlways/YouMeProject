@@ -99,7 +99,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/dialog_border"
                     android:layout_weight=".6"
-                    android:inputType="numberDecimal|textNoSuggestions"
+                    android:hint="5'6''"
+                    android:inputType="number|textNoSuggestions"
                     android:paddingLeft="10dp"
                     android:layout_marginLeft="20dp"/>
 

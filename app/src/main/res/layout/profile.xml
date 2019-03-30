@@ -37,7 +37,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/deomone" />
+                android:src="@drawable/userimage" />
 
 
             <TextView
@@ -85,6 +85,18 @@
             android:visibility="visible"
             app:disable_hw_acceleration="true"
             app:allowed_swipe_directions="both" />
+
+
+        <com.yuyakaido.android.cardstackview.CardStackView
+            android:id="@+id/card_stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+
+        </com.yuyakaido.android.cardstackview.CardStackView>
+
 
        <!-- <ImageView
             android:id="@+id/img_no_data_avel1"

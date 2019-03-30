@@ -35,7 +35,7 @@
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 android:visibility="gone"
-                android:src="@drawable/no_data_available"/>
+                android:src="@drawable/no_request_data_available"/>
 
         </LinearLayout>
 

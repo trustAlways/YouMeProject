@@ -47,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:progressTint="@color/pink"
+            android:visibility="visible"
             android:layout_marginTop="@dimen/mrg2"/>
 
         <ImageView
@@ -70,7 +71,7 @@
             android:layout_height="match_parent"
             android:scaleType="fitXY"
             android:visibility="gone"
-            android:src="@drawable/no_data_available"/>
+            android:src="@drawable/no_fav_data_available"/>
 
     </LinearLayout>
 

@@ -490,6 +490,55 @@
                     />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="visible"
+                android:background="#cacaca"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/ripple_accent"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/gender_user"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:text="Not Provided"
+                    android:textSize="18dp"
+                    android:gravity="right"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+            </LinearLayout>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -931,13 +980,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/mrg2"
+            android:visibility="visible"
             android:layout_gravity="center"/>
 
         <ImageView
             android:id="@+id/img_no_data_available_edt_profile"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/no_data_available"
+            android:src="@drawable/no_edt_profile_data_available"
             android:visibility="gone"/>
 
 

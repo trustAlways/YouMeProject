@@ -73,15 +73,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight=".2"
+            android:orientation="vertical"
             android:layout_marginTop="20dp">
 
             <TextView
                 android:id="@+id/date_send_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="pending"
+                android:hint="Pending"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:textSize="16dp"
                />
+
+            <Button
+                android:id="@+id/accepted_daterequest_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="Chat"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/mrg1"
+                android:textColor="@color/white"
+                android:background="@drawable/signup_button"
+                />
 
         </LinearLayout>
 

@@ -52,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_weight=".5"
+                android:layout_weight=".33"
                 android:background="@color/ll_background"
                 android:weightSum="1">
 
@@ -95,7 +95,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_weight=".5"
+                android:layout_weight=".33"
                 android:background="@color/ll_background"
                 android:weightSum="1">
 
@@ -127,6 +127,53 @@
                     android:visibility="gone"/>
 
             </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_light"
+                android:layout_marginBottom="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_accepted_crushes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".33"
+                android:background="@color/ll_background"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/acceptedcrushes_activated"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".97"
+                    android:visibility="gone"
+                    android:src="@drawable/accepted"
+                    android:padding="20dp"/>
+
+
+                <ImageView
+                    android:id="@+id/acceptedcrushes_deactivated"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".97"
+                    android:visibility="visible"
+                    android:src="@drawable/without_color_accepted"
+                    android:padding="20dp"/>
+
+                <View
+                    android:id="@+id/acceptedcrushes_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".03"
+                    android:background="@color/pink"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

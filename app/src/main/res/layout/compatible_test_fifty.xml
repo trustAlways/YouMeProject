@@ -52,7 +52,8 @@
         android:text="15.Do you believe in more than one crush at a time?"
         android:textSize="25dp"
         android:gravity="left"
-        android:paddingLeft="50dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="@dimen/mrg2"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/grey"/>
 

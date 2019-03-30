@@ -81,19 +81,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Pending"
+                android:padding="1dp"
                 android:gravity="center"
                 android:textSize="16dp"
                 />
 
             <Button
                 android:id="@+id/send_date_request"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="Date"
-                android:visibility="gone"
-                android:layout_marginTop="@dimen/mrg1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:textColor="@color/white"
-                android:background="@drawable/btn_dialog_rectangle"
+                android:background="@drawable/datingg"
                 />
 
         </LinearLayout>

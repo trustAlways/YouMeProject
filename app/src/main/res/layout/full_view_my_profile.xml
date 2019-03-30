@@ -22,6 +22,7 @@
             android:padding="5dp"/>
 
         <TextView
+            android:id="@+id/layout_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="User Profile"
@@ -59,7 +60,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginLeft="15dp"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_marginRight="15dp">
 
 
@@ -779,6 +780,49 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
 
+            <TextView
+                android:id="@+id/txt_insta_Photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="Instagram Photo"
+                android:paddingLeft="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="@dimen/mrg1"
+                android:textSize="20dp"
+                android:padding="@dimen/mrg1"
+                android:textStyle="normal|bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rel_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/mrg1">
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:columnWidth="100dp"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:focusable="true"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -828,12 +872,14 @@
                     >
 
                     <ImageView
+                        android:id="@+id/email_verified_icon"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:src="@drawable/email_grey"
                         />
 
                     <TextView
+                        android:id="@+id/email_verified_text"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:text="Not Verified"
@@ -857,12 +903,14 @@
                     >
 
                     <ImageView
+                        android:id="@+id/instagram_verified_icon"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:src="@drawable/instagram_grey"
                         />
 
                     <TextView
+                        android:id="@+id/instagram_verified_text"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:textColor="@color/grey_light"
